@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { AuthContext } from "../context/AuthContext";
 
-import empty_bag from '../assets/images/empty.png'
+import emptybag from '../assets/images/empty.PNG'
 
 function Cart() {
   const { cartItems, removeFromCart, updateQty } = useContext(CartContext);
@@ -13,7 +13,7 @@ function Cart() {
   if (cartItems.length === 0) {
     return (
       <div className="flex flex-col justify-center items-center gap-2 text-gray-500 h-[80vh]">
-        <img src={empty_bag} alt="Empty" className="w-36" />
+        <img src={emptybag} alt="Empty" className="w-36" />
         <h1 className="text-xl font-extrabold">Hey, it feels so light!</h1>
         <p className="text-sm font-semibold">There is nothing in your bag. Add some items.</p>
       </div>
