@@ -32,7 +32,7 @@ function Login() {
       const res = await signInWithEmailAndPassword(auth, email, password)
 
       // 2️⃣ Sync user with backend
-      await axios.post("http://localhost:5000/api/users", {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/users`, {
         email,
         firebaseUid: res.user.uid
       })
