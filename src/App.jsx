@@ -15,7 +15,6 @@ import Cart from './pages/Cart'
 import Product from './pages/Product'
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import ProtectedRoute from "./components/ProtectedRoutes"
 import Checkout from "./pages/Checkout"
 import OrderHistory from "./pages/OrderHistory";
 
