@@ -18,7 +18,7 @@ function Filter({ brands = [], types = [] }) {
                 <div className="mt-2">
                     {brands.map(function (data, index) {
                         return (
-                            <p key={index} className="flex items-center gap-1 text-xs">
+                            <p key={index} className="flex items-center gap-1 my-2 text-xs">
                                 <input type="checkbox" value={data.name} onChange={togglebrand} />
                                 {data.name}</p>
                         )
@@ -31,7 +31,7 @@ function Filter({ brands = [], types = [] }) {
                 <div className="mt-2">
                     {types.map(function (data, index) {
                         return (
-                            <p key={index} className="flex items-center gap-1 text-xs">
+                            <p key={index} className="flex items-center gap-1 my-2 text-xs">
                                 <input type="checkbox" value={data.type} onChange={toggleSubCategory} />
                                 {data.type}</p>
                         )
