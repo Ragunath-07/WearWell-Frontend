@@ -10,7 +10,7 @@ import Men from './pages/Men'
 import Women from './pages/Women'
 import About from './pages/About'
 import Login from './pages/Login'
-import Signup from './pages/Signup'
+import SignUp from './pages/SignUp'
 import Cart from './pages/Cart'
 import Product from './pages/Product'
 import Navbar from "./components/Navbar"
@@ -55,7 +55,7 @@ function App() {
         <Route path="/women" element={<Women />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/product/:id" element={<Product />}></Route>
         <Route path="/checkout" element={<Checkout />}></Route>
